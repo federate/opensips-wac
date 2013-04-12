@@ -1,13 +1,20 @@
-.fieldset
-= simple_form_for @translation do |f|
-  - if @translation.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@translation.errors.count, "error")} prohibited this translation from being saved:"
-      %ul
-        - @translation.errors.full_messages.each do |msg|
-          %li= msg
-
-  = f.input :from_domain
-
-  .actions
-    = f.button :submit
+.row
+  .span3.offset4
+    = simple_form_for @translation, :html => {:class => 'well'} do |f|
+      = f.error_notification
+      .inputs
+        .control-group
+          .controls
+            = f.input :from_domain, :label => 'From Domain'
+            = f.input :from_username, :label => 'From Username'
+            = f.input :match_regex, :label => 'Match Regex'
+            = f.input :tran_add_header, :label => 'Tran Add Header'
+            = f.input :tran_domain, :label => 'Tran Domain'
+            = f.input :tran_prefix, :label => 'Tran Prefix'
+            = f.input :tran_priority, :label => 'Tran Priority'
+            = f.input :tran_strip, :label => 'Tran Strip'
+            = f.input :tran_user, :label => 'Tran User'
+      .actions
+        .control-group
+          .controls
+            = f.button :submit, 'Save', :class => 'btn btn-primary'

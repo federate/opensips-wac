@@ -1,17 +1,36 @@
-%h1 Listing translations
+%h3 Listing translations
 
-%table
+%table.table.table-striped.table-hover
   %tr
-    %th
-    %th
-    %th
+    %th ID
+    %th From Domain
+    %th From Username
+    %th Match Regex
+    %th Tran Add Header
+    %th Tran Domain
+    %th Tran Prefix
+    %th Tran Priority
+    %th Tran Strip
+    %th Tran User
+    %th Actions
 
   - @translations.each do |translation|
     %tr
-      %td= link_to 'Show', translation
-      %td= link_to 'Edit', edit_translation_path(translation)
-      %td= link_to 'Destroy', translation, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= translation.id
+      %td= translation.from_domain
+      %td= translation.from_username
+      %td= translation.match_regex
+      %td= translation.tran_add_header
+      %td= translation.tran_domain
+      %td= translation.tran_prefix
+      %td= translation.tran_priority
+      %td= translation.tran_strip
+      %td= translation.tran_user
+      %td
+        %ul.actions
+          %li= link_to 'Edit', edit_translation_path(translation), :class => 'btn btn-mini'
+          %li= link_to 'Destroy', translation, :method => :delete, :data => { :confirm => 'Are you sure?' }, :class => 'btn btn-danger btn-mini'
 
 %br
 
-= link_to 'New Translation', new_translation_path
+= link_to 'New Translation', new_translation_path, :class => 'btn'

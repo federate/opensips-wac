@@ -12,4 +12,40 @@
  *= require_tree .
  */
 
- @import "bootstrap";
+ .content {
+   background-color: #FCFCFC;
+   padding: 20px;
+   margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+   -webkit-border-radius: 0 0 6px 6px;
+   -moz-border-radius: 0 0 6px 6px;
+   border-radius: 0 0 6px 6px;
+   -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+   -moz-box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+   box-shadow: 1px 1px 1px rgba(0,0,0,.15);
+ }
+
+form {
+  .actions {
+    //margin: 0 50px 0 50px;
+    text-align: center;
+  }
+}
+
+table {
+  th {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+  }
+  td {
+    border-right: thin solid #EEE;
+    border-left: thin solid #EEE;
+    border-bottom: thin solid #DCDCDC;
+  }
+
+  ul.actions {
+    li {
+      float: left;
+      margin: 0 3px 0 3px;
+    }
+  }
+}
