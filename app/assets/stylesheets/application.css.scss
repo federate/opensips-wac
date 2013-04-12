@@ -24,21 +24,20 @@
    box-shadow: 1px 1px 1px rgba(0,0,0,.15);
  }
 
-form {
-  .actions {
-    //margin: 0 50px 0 50px;
-    text-align: center;
-  }
+.actions {
+  text-align: center;
 }
 
-table {
+table.table {
   th {
-    border-left: 1px solid #CCC;
-    border-right: 1px solid #CCC;
+    border-left: thin solid #CCC;
+    border-right: thin solid #CCC;
+    border-bottom: thin solid #CCC;
+    text-align: center;
   }
   td {
-    border-right: thin solid #EEE;
-    border-left: thin solid #EEE;
+    border-right: thin solid #DDD;
+    border-left: thin solid #DDD;
     border-bottom: thin solid #DCDCDC;
   }
 
