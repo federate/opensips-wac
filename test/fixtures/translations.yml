@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from_username: MyString
+  from_domain: MyString
+  match_regex: MyString
+  tran_strip: MyString
+  tran_prefix: MyString
+  tran_user: MyString
+  tran_domain: MyString
+  tran_add_header: MyString
+  tran_priority: 1
+
+two:
+  from_username: MyString
+  from_domain: MyString
+  match_regex: MyString
+  tran_strip: MyString
+  tran_prefix: MyString
+  tran_user: MyString
+  tran_domain: MyString
+  tran_add_header: MyString
+  tran_priority: 1
