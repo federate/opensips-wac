@@ -5,8 +5,6 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', '~> 1.3.6'
-
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -26,12 +24,14 @@ group :test, :development do
   gem "rspec-rails", "~> 2.0"
 end
 
+gem 'sqlite3', '~> 1.3.6'
 gem 'haml-rails', '~> 0.4'
 gem 'grape', '~> 0.4.1'
 gem "simple_form", '~> 2.1.0'
 gem 'jquery-rails', '~> 2.1.2'
 gem 'jquery-ui-rails', '~> 2.0.0'
 gem 'thin', '~> 1.3.0', :platform => :ruby
+gem 'devise', '~> 2.2.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
